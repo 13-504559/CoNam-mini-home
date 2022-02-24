@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>photo</title>
+        <link rel="stylesheet" href="./static/font.css">
+        <link rel="stylesheet" href="./static//layout.css">
+        <link rel="stylesheet" href="./static//diary.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Single+Day&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/1175451034.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="bookcover">
+            <div class="bookdot">
+                <div class="page">
+                    <div class="column-left">
+                        <div class="left-count">TODAY <span>28</span> | TOTAL 654852</div>
+                        <div class="left-profile">
+                            <div class="profile-photo"><img src="./static/./images/애플.png" width="250px"></div>
+                            <div class="contents">S2 ㄴr는 ㄱr끔 눈물을 흘린ㄷr<br>
+                                오H냐ㅎr면<br>
+                                2주ㅊr부ㅌㅓ 어려워졌ㄷr<br>
+                                ㅊr근ㅊr근 ㅎr면 ㄴrㅇrㅈl겠죠?^^*</div>
+                            <div class="name"><span>Coㄷㅣㅇㅎr는 남자</span></div>
+                            <div class="dropdown">
+                                <select name="surfing" class="surfing">
+                                    <option value="none" selected disabled hidden>파도타기</option>
+                                    <option value="https://www.naver.com">코뮤니티로 가기</option>
+                                    <option value="https://www.instagram.com/">인스타그램으로 가기</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column-center">
+                        <div class="center-title">
+                            <div class="title">ㅅr과ㄴㅗㅇㅈrㅇ</div>
+                            <div class="address">https://codingnam.minihome/</div>
+                        </div>
+                        <div class="center">
+                            <div class="center-top">
+                                <div class="center-datebox">
+                                    <div class="today-date">02.21 MON</div>
+                                    <div class="calendar">
+                                        <div class="day">1</div>
+                                        <div class="day">2</div>
+                                        <div class="day">3</div>
+                                        <div class="day">4</div>
+                                        <div class="sat">5</div>
+                                        <div class="sun">6</div>
+                                        <div class="day">7</div>
+                                        <div class="day">8</div>
+                                        <div class="day">9</div>
+                                        <div class="day">10</div>
+                                        <div class="day">11</div>
+                                        <div class="sat">12</div>
+                                        <div class="sun">13</div>
+                                        <div class="day">14</div>
+                                        <div class="day">15</div>
+                                        <div class="day">16</div>
+                                        <div class="day">17</div>
+                                        <div class="day">18</div>
+                                        <div class="sat">19</div>
+                                        <div class="sun">20</div>
+                                        <div class="day">21</div>
+                                        <div class="day">22</div>
+                                        <div class="day">23</div>
+                                        <div class="day">24</div>
+                                        <div class="day">25</div>
+                                        <div class="sat">26</div>
+                                        <div class="sun">27</div>
+                                        <div class="day">28</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="center-bottom">
+                                <div class="diary-box">
+                                    <div class="diary-date">2022.02.21 월 22:00</div>
+                                    <div class="diary-text">
+                                        <p>일단 출석을 하기위해 급하게 만들고있다<br>
+                                        으샤으샤 힘내보자<br>
+                                        모각코 운영자 님은 알아주실까?<br>
+                                        핫스팟을 켜서 공부하고있다는걸....<br>
+                                        참고로 노트북이고 15인치이다<br>
+                                        모니터 사야겠다</p>
+                                    </div>
+                                </div>
+                                <div class="diary-box">
+                                    <div class="diary-date">2022.02.21 월 21:00</div>
+                                    <div class="diary-text">
+                                        <p>일대일 강의라도 들어야 하나?ㅋㅋㅋㅋ<br>
+                                        나만 이해못했어?<br>
+                                        이거 왜 넘어가지?</p>
+                                    </div>
+                                </div>
+                                <button class="secret_button" onclick="getTextFile()">
+                                    <i class="fa-brands fa-apple"></i>레츠고 비밀일기
+                                </button>
+                                <div class="diary-box" id="secret">
+                                    <div class="diary-date">이것은 비밀일기</div>
+                                    <div class="diary-text"></div>
+                                    <div id="secret-diary"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column-right">
+                        <div class="right-menubox">
+                            <div class="right-menu" onclick="location.href='MiniHome.html';" style="cursor:pointer;">홈</div>
+                            <div class="right-menu" onclick="location.href='diary.html';" style="cursor:pointer;">다이어리</div> 
+                            <div class="right-menu" onclick="location.href='photo.html';" style="cursor:pointer;">사진첩</div>
+                            <div class="right-menu" onclick="location.href='guestbook.html';" style="cursor:pointer;">방명록</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            function getTextFile(){
+                var input = document.createElement("input");
+                input.type = "file";
+                input.accept = "text/plain";
+                input.onchange = function (event) {
+                    processfile(event.target.files[0]);
+                };
+                input.click();
+            }
+            function processfile(file){
+                var reader = new FileReader();
+                reader.readAsText(file,"utf-8");
+
+                reader.onload = function(){
+                    document.getElementById("secret-diary").innerText = reader.result;
+                    document.getElementById("secret").style.display="block";
+                    };
+            }
+        </script>
+    </body>
+</html>

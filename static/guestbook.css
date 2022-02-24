@@ -1,0 +1,55 @@
+.center{
+    overflow: auto;
+}
+.guestbook{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+}
+.guestbook-title{
+    background-color: beige;
+    font-size: 16px;
+    margin: 5px;
+    padding: 7px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.guest-name{
+    color: brown;
+}
+.guestbook-contens{
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    padding: 7px;
+}
+.guestbook-profile{
+    flex: 0 0 8rem;
+    height: 8rem;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.background-1{
+    background-image: url(./images/apple\ watch.jpg);
+}
+.background-2{
+    background-image: url(./images/무선충전.jpg);
+}
+.background-3{
+    background-image: url(./images/iphone-13-mini.png);
+}
+.guestbook-profile > img{
+    width: 80%;
+}
+.guestbook-ment{
+    flex: 1;
+    font-family: cursive;
+    font-size: 15px;
+    text-align: justify;
+    justify-items: center;
+    align-items: center;
+    margin: 5px;
+    padding: 7px;
+}

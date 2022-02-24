@@ -1,0 +1,99 @@
+.center-contens{
+    overflow: auto;
+    flex-direction: row;
+    display: flex;
+}
+.center-top{
+    display: flex;
+    flex-direction: column;
+    flex: 0.1;
+    margin-bottom: 10px;
+    position: absolute;
+    height: 3rem;
+    width: 60%;
+}
+.center-datebox{
+    display: flex;
+    flex: 0.8;
+    flex-direction: row;
+    border-radius: 15px;
+    border: 1px solid skyblue;
+}
+.today-date{
+    color: lightblue;
+    font-weight: bold;
+    font-size: 18px;
+    flex: 0.1;
+    padding: 2px;
+    box-sizing: border-box;
+}
+.calendar{
+    flex: 0.9;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 15px;
+    font-size: 20px;
+}
+.day{
+    font-family: inherit;
+    color: rgb(158, 158, 158);
+    margin-right: 6px;
+    width: 20px;
+    height: 20px;
+}
+.sat{
+    font-family: inherit;
+    color: blue;
+    margin-right: 7px;
+    width: 20px;
+    height: 20px;
+}
+.sun{
+    font-family: inherit;
+    color: red;
+    margin-right: 7px;
+    width: 20px;
+    height: 20px;
+}
+.center-bottom{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    position: absolute;
+    margin-top: 3rem;
+    width: 55%;
+    padding: 10px;
+    overflow: auto;
+}
+.diary-box{
+    display: flex;
+    flex-direction: column;
+}
+.diary-date{
+    font-family: inherit;
+    color: rgb(158, 158, 158);
+    background-color: aliceblue;
+}
+.diary-text{
+    font-size: 20px;
+    color: black;
+}
+.secret_button {
+    padding: 15px 20px;
+
+    color: white;
+    background-color: white;
+
+    border-radius: 5px;
+    border: solid 0 white;
+
+    font-family: 'GmarketSansMedium';
+}
+.secret_button:hover {
+    transition: 800ms ease all;
+
+    background-color: gray;
+}
+#secret{
+    display: none;
+}
